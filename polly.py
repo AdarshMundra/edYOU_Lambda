@@ -34,16 +34,4 @@ def lambda_handler(event, context):
         'data':data
     }    
     
-    # s3_client = boto3.client('s3',region_name="us-west-2",config=boto3.session.Config(signature_version='s3v4',))
-    # try:
-    #     response = s3_client.generate_presigned_url('get_object',
-    #                                                 Params={'Bucket': bucket_name,
-    #                                                         'Key': filename},
-    #                                                 ExpiresIn=3600)
-                                            
-    # except Exception as e:
-    #     print(e)
-    #     logging.error(e)
-    #     return "Error"
-    # # The response contains the presigned URL
-    # return response
+    
